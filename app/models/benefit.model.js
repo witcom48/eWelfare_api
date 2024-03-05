@@ -23,7 +23,7 @@ Benefit.get = result => {
     str += ", ISNULL(EDIT_BY, CREATE_BY) AS EDIT_BY"
     str += ", ISNULL(EDIT_DATE, CREATE_DATE) AS EDIT_DATE"
     str += " FROM WEL_TRX_BENEFIT"
-    str += " ORDER BY BENEFIT_ID"
+    str += " ORDER BY BENEFIT_FROM DESC"
     
     sql.query(str, (err, res) => {
 

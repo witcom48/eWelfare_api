@@ -10,6 +10,8 @@ const app = express();
 
 const user = require('./routes/user.routes')
 const benefit = require('./routes/benefit.routes')
+const hostran = require('./routes/hostran.routes')
+
 
 //-- Config
 app.use(bodyParser.json());
@@ -32,5 +34,5 @@ app.listen(4000, () => {
 
 app.use(user)
 app.use(benefit)
-
+app.use(hostran)
 
